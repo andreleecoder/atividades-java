@@ -3,14 +3,15 @@ import javax.swing.*;
 class ProgRepeticao {
   public static void main(String entrada[]) {
     // variaveis
-    int num;
+    int Tabuada;
     char op=0;
-    String msg = "", msgEntr="Doigite 1 para par/impar \n Digite 2 para positivo/negativo";
+    String msg = "", msgEntr="Doigite 1 para repeticao for\n 2 para repeticao while\n 3 para repeticao do while";
 
     // entrada de dados
-    num = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero inteiro"));
-    op = (JOptionPane.showInputDialog("Digite outro numero inteiro")).charAt(0);
+    Tabuada = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero inteiro"));
+    op = (JOptionPane.showInputDialog(msgEntr)).charAt(0);
 
+    // Processamento
     // Processamento
   switch(op)
   {
@@ -42,7 +43,7 @@ class ProgRepeticao {
   }
 
     // saida resultado
-    if(op=='1' || op=='2')
+    if(op>='1' && op<='2')
     {
       JOptionPane.showMessageDialog(null, msg);
     }
